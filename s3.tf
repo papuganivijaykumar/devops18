@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "one" {
-  bucket = "mustafa.devops.project.bucket"
+  bucket = "vijay.devops.project.bucket"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
@@ -24,7 +24,7 @@ status = "Enabled"
 }
 terraform {
 backend "s3" {
-bucket = aws_s3_bucket.one.id
+bucket = "vijay.devops.project.bucket"
 key = "prod/terraform.tfstate"
 region = "us-east-1"
 }
