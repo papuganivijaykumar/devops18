@@ -22,12 +22,3 @@ versioning_configuration {
 status = "Enabled"
 }
 }
-terraform {
-backend "s3" {
-bucket = "vijay.devops.project.bucket"
-key = "prod/terraform.tfstate"
-region = "us-east-1"
-}
-}
-
-
